@@ -40,7 +40,7 @@ public class ServerAgent implements Agent
     @Override
     public void onStart()
     {
-        log.info("Server starting");
+        log.info("onStart, waiting client connection...");
         subscription = aeron.addSubscription(Constants.SERVER_URI, Constants.RPC_STREAM);
     }
 
